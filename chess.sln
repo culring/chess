@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chess", "chess\chess.vcxproj", "{18EE26D4-9CDC-4774-8FE6-01BA12D46FBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18EE26D4-9CDC-4774-8FE6-01BA12D46FBB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{18EE26D4-9CDC-4774-8FE6-01BA12D46FBB}.Debug|Win32.Build.0 = Debug|Win32
+		{18EE26D4-9CDC-4774-8FE6-01BA12D46FBB}.Release|Win32.ActiveCfg = Release|Win32
+		{18EE26D4-9CDC-4774-8FE6-01BA12D46FBB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

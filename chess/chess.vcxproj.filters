@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{6936e876-c177-45d3-93d6-fce2ce81fa82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{e5e1c6a6-413c-4807-8a9b-a94f4a30fe5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{fec5a34f-8972-4edf-980e-926f1268279b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{e152f377-ac00-400e-a2a0-121b96c438f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shaders">
+      <UniqueIdentifier>{94992516-5b6e-4303-9288-da4ee98ac050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Camera">
+      <UniqueIdentifier>{ec32d556-0ded-4940-9248-7d389b05fcb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Mesh">
+      <UniqueIdentifier>{3091f534-f5ce-4ee9-844d-5100c3a3a24b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Models">
+      <UniqueIdentifier>{80939464-a7b1-4cff-9e9e-1ac1738ceba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Animations">
+      <UniqueIdentifier>{0ff0cb5b-2a94-41d7-a0a8-5667beb8b8dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Mesh">
+      <UniqueIdentifier>{5c260a47-2a73-477e-9f31-fead518af171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Models">
+      <UniqueIdentifier>{5c38031f-92f4-451e-96fe-64671a8eee41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera">
+      <UniqueIdentifier>{1ce4e9d3-001e-404f-af92-b062a7e10da7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animations">
+      <UniqueIdentifier>{82a33fee-6633-4dd4-8771-4ee967bca419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exceptions">
+      <UniqueIdentifier>{ab937cef-4e63-4e7a-94a6-7f95bcea59fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Texturer.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="BoardModel.cpp">
+      <Filter>Source Files\Engine\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CounterModel.cpp">
+      <Filter>Source Files\Engine\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Source Files\Engine\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshGenerator.cpp">
+      <Filter>Source Files\Engine\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="QueenModel.cpp">
+      <Filter>Source Files\Engine\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>Source Files\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="Checker.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationParameterException.cpp">
+      <Filter>Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyboxModel.cpp">
+      <Filter>Source Files\Engine\Models</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Texturer.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="BoardModel.h">
+      <Filter>Header Files\Engine\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="CounterModel.h">
+      <Filter>Header Files\Engine\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files\Engine\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshGenerator.h">
+      <Filter>Header Files\Engine\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="QueenModel.h">
+      <Filter>Header Files\Engine\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator.h">
+      <Filter>Header Files\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="Checker.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationParameterException.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyboxModel.h">
+      <Filter>Header Files\Engine\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="basic_shader.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="basic_shader.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="skybox_shader.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="skybox_shader.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="textures\black_granite.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\white_gray_granite.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\wood.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\checkerboard.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\checkerboard.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\suede.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="chess.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
