@@ -15,8 +15,8 @@
 #include "SkyboxModel.h"
 
 // settings
-const unsigned int SCR_WIDTH = 1024;
-const unsigned int SCR_HEIGHT = 768;
+const unsigned int SCR_WIDTH = 1080;
+const unsigned int SCR_HEIGHT = 720;
 
 // camera
 Camera camera(
@@ -28,6 +28,7 @@ Camera camera(
 float lastX = SCR_WIDTH / 2.0f;
 float lastY = SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
+bool isMousePressed = false;
 
 // timing
 float deltaTime = 0.0f;	// time between current frame and last frame
@@ -312,10 +313,7 @@ void Game::initGLFW()
 		glfwMakeContextCurrent(m_window);
 
 		//input
-		glfwSetKeyCallback(m_window, key_callback);
-		glfwSetFramebufferSizeCallback(m_window, framebuffer_size_callback);
 		glfwSetCursorPosCallback(m_window, mouse_callback);
-		glfwSetScrollCallback(m_window, scroll_callback);
 		// tell GLFW to capture our mouse
 		glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
@@ -358,6 +356,7 @@ void processInput(GLFWwindow *window)
 		camera.ProcessKeyboard(LEFT, deltaTime);
 	if(glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
 		camera.ProcessKeyboard(RIGHT, deltaTime);
+
 	if(gameState == RUNNING && queenAnimating == NOT_ANIMATING)
 	{
 		if(glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
@@ -370,16 +369,6 @@ void processInput(GLFWwindow *window)
 			queenMove = MOVE_DOWN;
 	}
 }
-
-// glfw: whenever the window size changed (by OS or user resize) this callback function executes
-// ---------------------------------------------------------------------------------------------
-void framebuffer_size_callback(GLFWwindow* window, int width, int height)
-{
-	// make sure the viewport matches the new window dimensions; note that width and 
-	// height will be significantly larger than specified on retina displays.
-	glViewport(0, 0, width, height);
-}
-
 
 // glfw: whenever the mouse moves, this callback is called
 // -------------------------------------------------------
@@ -399,17 +388,4 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos)
 	lastY = ypos;
 
 	camera.ProcessMouseMovement(xoffset, yoffset);
-}
-
-// glfw: whenever the mouse scroll wheel scrolls, this callback is called
-// ----------------------------------------------------------------------
-void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
-{
-	camera.ProcessMouseScroll(yoffset);
-}
-
-void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
-{
-	if(key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
-		glfwSetWindowShouldClose(window, GL_TRUE);
 }
